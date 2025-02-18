@@ -56,7 +56,7 @@ in
 
       userName = mkOption {
         type = types.str;
-        readOnly = true;
+        default = "nix-on-droid";
         description = "User name.";
       };
 
@@ -92,7 +92,6 @@ in
     user = {
       group = "nix-on-droid";
       home = "/data/data/com.termux.nix/files/home";
-      userName = "nix-on-droid";
     };
 
   };
